@@ -112,10 +112,13 @@
           </div>
 
           <div class="col">
+
 				    <a class="btn btn-link" role="button" href="tel:+12065551234">
               <i class="fa fa-phone"></i> 1-206-555-1234
             </a>
+
             <br>
+
             <a class="btn btn-link" role="button" href="mailto:campsites@nucamp.co">
               <i class="fa fa-envelope-o"></i> campsites@nucamp.co
             </a>
@@ -132,7 +135,69 @@
           </div>
 
           <div class="col-md-10">
-            Form goes here
+            <!--Form-->
+            <form>
+              <!--Form: Users First Name-->
+              <div class="form-group row">
+                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                <div class="col-md-10">
+                  <input id="firstName" class="form-control" type="text" name="firstName" placeholder="First Name" />
+                </div>
+              </div>
+              <!--Form: Users Last Name-->
+              <div class="form-group row">
+                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                  <input id="lastName" class="form-control" type="text" name="lastName" placeholder="Last Name" />
+                </div>
+              </div>
+              <!--Form: Users Phone Number-->
+              <div class="form-group row">
+                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                <div class="col-5 col-md-3">
+                  <input id="areaCode" class="form-control" type="tel" name="areaCode" placeholder="Area Code" />
+                </div>
+                <div class="col-7">
+                  <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                </div>
+              </div>
+              <!--Form: Users Email-->
+              <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                  <input id="email" class="form-control" type="email" name="email" placeholder="Email" />
+                </div>
+              </div>
+              <!--Form: May We Contact?-->
+              <div class="form-group row">
+                <div class="col offset-md-2">
+                  <!--Yes-->
+                  May we contact you?
+                  <div class="form-check form-check-inline">
+                    <input id="contactYes" class="form-check-input" type="radio" name="contactRadios" value="yes" />
+                    <label for="contactYes" class="form-check-label">Yes</label>
+                  </div>
+                  <!--No-->
+                  <div class="form-check form-check-inline">
+                    <input id="contactNo" class="form-check-input" type="radio" name="contactRadios" value="no" />
+                    <label for="contactNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <!--Form: Users Feedback-->
+              <div class="form-group row">
+                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                <div class="col-md-10">
+                  <textarea id="feedback" name="feedback" rows="8"></textarea>
+                </div>
+              </div>
+              <!--Form: Submit-->
+              <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                  <button type="submit" class="btn btn-primary">Send Feedback</button>
+                </div>
+              </div>
+            </form>
           </div>
 
         </div>
